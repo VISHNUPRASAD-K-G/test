@@ -39,6 +39,7 @@ function Landingpage() {
         </div>
       </header>
       {/* NEW ARRIVALS */}
+      <Link to={'/payment-success'}><button className='px-4 py-2 bg-green-600 text-white cursor-pointer'>Payment page</button></Link>
       <section className='flex justify-center items-center flex-col md:p-10 md:px-40 p-5'>
         <h2>NEW ARRIVALS</h2>
         <h4 className='text-2xl'>Explore Our Latest Collection</h4>
