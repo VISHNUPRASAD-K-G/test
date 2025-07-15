@@ -15,6 +15,8 @@ import Adminhome from './Admin/pages/Adminhome'
 import Adminbooks from './Admin/pages/Adminbooks'
 import Admincareers from './Admin/pages/Admincareers'
 import Adminsettings from './Admin/pages/Adminsettings'
+import Paymentsuccess from './Users/pages/Paymentsuccess'
+import Paymenterror from './Users/pages/Paymenterror'
 // import { ToastContainer } from 'react-toastify'
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/view-book/:id' element={<Viewbook />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/payment-success' element={<Paymentsuccess />} />
+        <Route path='/payment-error' element={<Paymenterror />} />
 
 
         {/* path for admin */}
@@ -54,7 +58,7 @@ function App() {
         <Route path='*' element={<Pagenotfound />} />
       </Routes>
       {/* <ToastContainer position='top-center' theme='colored' autoClose={2000} /> */}
-      
+
     </>
   )
 }
